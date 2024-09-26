@@ -116,8 +116,10 @@ module.exports = {
         });
     }
 
+    return queue.node.play();
+
     // mainkan musik
-    return queue.isPlaying() ? interaction.reply({ embeds: [embed] }) : queue.node.play();
+    // return queue.isPlaying() ? interaction.reply({ embeds: [embed] }) : queue.node.play();
 
     if (!queue.isPlaying()) {
       queue.node.play();
